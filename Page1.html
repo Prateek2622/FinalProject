@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Form</title>
+    <link rel="stylesheet" href="Page2.css">
+    <script defer src="Page3.js"></script>
+</head>
+<body id="img">
+
+    <header>
+        <h1>Company Registration Form</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#form-section">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section id="form-section">
+            <h2>Register Your Company</h2>
+            <form id="company-form">
+                <!-- Company Information -->
+                <fieldset>
+                    <legend>Company Information</legend>
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" name="company-name" required>
+
+                    <label for="company-type">Type of Business:</label>
+                    <select id="company-type" name="company-type" required>
+                        <option value="">--Select--</option>
+                        <option value="IT">IT</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Retail">Retail</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Education">Education</option>
+                        <option value="Government Employee">Government Employee</option>
+                    </select>
+
+                    <label for="established-date">Established Date:</label>
+                    <input type="date" id="established-date" name="established-date" required>
+                </fieldset>
+
+                <!-- Contact Information -->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="contact-person">Contact Person:</label>
+                    <input type="text" id="contact-person" name="contact-person" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="description">Brief Description of the Company:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>* Company Registration | Contact us: info@companyform.com</p>
+    </footer>
+</body>
+</html>
